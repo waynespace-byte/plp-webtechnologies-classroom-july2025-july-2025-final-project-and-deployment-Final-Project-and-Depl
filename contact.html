@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechSpace Solutions</title>
+    <meta name="description" content="Get in touch with TechFlow Solutions. Contact us for your web development, mobile app, and digital strategy needs.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <span class="nav__logo-icon">⚡</span>
+                    TechSpace
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <span>&times;</span>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero section section--bg">
+            <div class="container">
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">Get In Touch</h1>
+                    <p class="page-hero__description">Ready to start your project? Let's discuss how we can help bring your ideas to life</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section">
+            <div class="container">
+                <div class="contact__container grid">
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrapper">
+                        <h2 class="contact__title">Send Us a Message</h2>
+                        
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group grid">
+                                <div class="form__field">
+                                    <label style="color:black" for="name" class="form__label">Full Name *</label>
+                                    <input style="background:greenyellow" type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                                    <span class="form__error" id="name-error"></span>
+                                </div>
+                                
+                                <div class="form__field">
+                                    <label style="color:black" for="email" class="form__label">Email Address *</label>
+                                    <input style="background:greenyellow" type="email" id="email" name="email" class="form__input" placeholder="email@example.com" required>
+                                    <span class="form__error" id="email-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group grid">
+                                <div class="form__field">
+                                    <label style="color:black" for="company" class="form__label">Company Name</label>
+                                    <input style="background:greenyellow" type="text" id="company" name="company" class="form__input" placeholder="Your Company Name">
+                                </div>
+                                
+                                <div class="form__field">
+                                    <label style="color:black"for="service" class="form__label">Service Interested In *</label>
+                                    <select style="background:greenyellow" id="service" name="service" class="form__select" required>
+                                        <option value="">Select a service</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="mobile-apps">Mobile App Development</option>
+                                        <option value="ui-ux-design">UI/UX Design</option>
+                                        <option value="cloud-solutions">Cloud Solutions</option>
+                                        <option value="digital-strategy">Digital Strategy</option>
+                                        <option value="maintenance-support">Maintenance & Support</option>
+                                    </select>
+                                    <span class="form__error" id="service-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form__field">
+                                <label style="color:black" for="message" class="form__label">Message *</label>
+                                <textarea style="background:rgb(0, 225, 255)" id="message" name="message" class="form__textarea" rows="6" placeholder="Tell us about your project..." required></textarea>
+                                <span class="form__error" id="message-error"></span>
+                            </div>
+                            
+                            <button style="background:burlywood" type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                                <span  class="btn__text">Send Message</span>
+                                <span class="btn__icon">→</span>
+                                <div class="btn__loading" id="loading-spinner">
+                                    <div class="spinner"></div>
+                                </div>
+                            </button>
+                            
+                            <div class="form__success" id="success-message">
+                                <div class="success__icon">✅</div>
+                                <p>Message sent successfully! We'll get back to you soon.</p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+                        <h2 class="contact__title">Contact Information</h2>
+                        <p class="contact__description">
+                            We're here to help and answer any questions you might have. 
+                            We look forward to hearing from you.
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact__item-icon">📧</div>
+                                <div class="contact__item-content">
+                                    <h3 class="contact__item-title">Email Us</h3>
+                                    <p class="contact__item-text">waynekibisu2@gmail.com</p>
+                                    <span class="contact__item-desc">Send us an email anytime!</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__item-icon">📞</div>
+                                <div class="contact__item-content">
+                                    <h3 class="contact__item-title">Call Us</h3>
+                                    <p class="contact__item-text">+254 704747202</p>
+                                    <span class="contact__item-desc">Mon-Sun from 8am to 5pm</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__item">
+                                <div class="contact__item-icon">📍</div>
+                                <div class="contact__item-content">
+                                    <h3 class="contact__item-title">Visit Us</h3>
+                                    <p class="contact__item-text">123 Tech Street, Nairobi Kenya</p>
+                                    <span class="contact__item-desc">Come say hello at our HQ</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="contact__map">
+                            <div class="map__placeholder">
+                                <div class="map__icon">📍</div>
+                                <h3 class="map__title">Our Location</h3>
+                                <p class="map__description">
+                                    We're located in the heart of Nairobi Kenya, 
+                                    easily accessible by public transport.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <div class="footer__brand">
+                        <a href="index.html" class="footer__logo">
+                            <span class="footer__logo-icon">⚡</span>
+                            TechSpace Solutions
+                        </a>
+                        <p class="footer__description">
+                            Transforming businesses through innovative web solutions and cutting-edge technology.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer__content">
+                    <h4 class="footer__title">Nav Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__links">
+                        <li><span class="footer__link">Web Development</span></li>
+                        <li><span class="footer__link">Mobile Apps</span></li>
+                        <li><span class="footer__link">UI/UX Design</span></li>
+                        <li><span class="footer__link">Cloud Solutions</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h4 class="footer__title">Contact Info</h4>
+                    <div class="footer__contact">
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📧</span>
+                            waynekibisu@gmail.com
+                        </p>
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📞</span>
+                            +254 704747202
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 TechSpace Solutions. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
